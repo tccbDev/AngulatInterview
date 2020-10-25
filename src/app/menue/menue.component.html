@@ -1,0 +1,16 @@
+<ul *ngFor="let menue of MenuList">
+  <li>
+    {{menue.name}}
+    <ul *ngFor="let menuItem of menue.submenus">
+      <li><a href="#">{{menuItem.name}}</a>
+        <div *ngIf="menuItem.hasOwnProperty('submenus')">
+          <ul *ngFor="let menuChield of menuItem.submenus">
+            <li><a href="#">{{menuChield.name}}</a></li>
+          </ul>
+        </div>
+
+      </li>
+    </ul>
+  </li>
+
+</ul>

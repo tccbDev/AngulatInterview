@@ -1,0 +1,19 @@
+[
+  {
+    "name": "link 1",
+    "submenus": [{ "name": "submenu 1" }]
+  },
+  {
+    "name": "link 2",
+    "submenus": [
+      {
+        "name": "submenu 2",
+        "submenus": [
+          {
+            "name": "submenu 3"
+          }
+        ]
+      }
+    ]
+  }
+]
